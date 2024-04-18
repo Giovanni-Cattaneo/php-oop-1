@@ -2,11 +2,11 @@
 
 class Production
 {
-    public $title;
-    public $language;
-    public $score;
+    // public $title;
+    // public $language;
+    // public $score;
 
-    function __construct($title, $language, $score)
+    function __construct(public string $title, public string $language, public string $score)
     {
         $this->title = $title;
         $this->language = $language;
