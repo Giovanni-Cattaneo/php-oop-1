@@ -11,6 +11,11 @@ $matrix = new Production();
 
 $matrix->title = 'The Matrix';
 
+$matrix->language = 'English';
+
+$matrix->score = '8/10';
+
+
 var_dump($matrix);
 
 $cast_away = new Production();
