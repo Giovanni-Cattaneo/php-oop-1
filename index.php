@@ -34,32 +34,59 @@ require './models/db.php';
     <main class="mt-5">
         <div class="container">
             <div class="row justify-content-center align-items-center g-2">
-                <div class="col-4 d-flex gap-3">
-                    <div class="card">
+                <div class="col d-flex flex-wrap justify-content-center gap-3" v-for="card in cards">
+                    <div class="card w-25">
                         <div class="card-body">
                             <h4 class="card-title"><?php echo $matrix->title ?></h4>
                             <p class="card-text"><?php echo $matrix->language ?></p>
                             <p class="card-text"><?php echo $matrix->score ?></p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card w-25">
                         <div class="card-body">
                             <h4 class="card-title"><?php echo $cast_away->title ?></h4>
                             <p class="card-text"><?php echo $cast_away->language ?></p>
                             <p class="card-text"><?php echo $cast_away->score ?></p>
                         </div>
                     </div>
+                    <div class="card w-25">
+                        <div class="card-body">
+                            <h4 class="card-title"><?php echo $schindler_list->title ?></h4>
+                            <p class="card-text"><?php echo $schindler_list->language ?></p>
+                            <p class="card-text"><?php echo $schindler_list->score ?></p>
+                        </div>
+                    </div>
+                    <div class="card w-25">
+                        <div class="card-body">
+                            <h4 class="card-title"><?php echo $lord_of_the_rings->title ?></h4>
+                            <p class="card-text"><?php echo $lord_of_the_rings->language ?></p>
+                            <p class="card-text"><?php echo $lord_of_the_rings->score ?></p>
+                        </div>
+                    </div>
+                    <div class="card w-25">
+                        <div class="card-body">
+                            <h4 class="card-title"><?php echo $star_wars->title ?></h4>
+                            <p class="card-text"><?php echo $star_wars->language ?></p>
+                            <p class="card-text"><?php echo $star_wars->score ?></p>
+                        </div>
+                    </div>
+                    <div class="card w-25">
+                        <div class="card-body">
+                            <h4 class="card-title"><?php echo $in_vacanza_su_marte->title ?></h4>
+                            <p class="card-text"><?php echo $in_vacanza_su_marte->language ?></p>
+                            <p class="card-text"><?php echo $in_vacanza_su_marte->score ?></p>
+                        </div>
 
-                </div>
-            </div>
+                    </div>
 
-        </div>
+
+
     </main>
 
 
 
 </body>
 
-<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
 
 </html>
