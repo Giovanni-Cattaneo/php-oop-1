@@ -18,26 +18,44 @@ require './models/db.php';
         body {
             background-color: antiquewhite;
         }
+
+        .header {
+            background-color: black;
+            color: white;
+        }
     </style>
 </head>
 
 <body>
-
-    <div class="container">
-        <div class="row justify-content-center align-items-center g-2">
-            <div class="col-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h4 class="card-title"><?php echo $matrix->title ?></h4>
-                        <p class="card-text"><?php echo $matrix->language ?></p>
-                        <p class="card-text"><?php echo $matrix->score ?></p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
+    <div class="header p-3">
+        <h2>Welcome to Movie.db</h2>
     </div>
+
+    <main class="mt-5">
+        <div class="container">
+            <div class="row justify-content-center align-items-center g-2">
+                <div class="col-4 d-flex gap-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title"><?php echo $matrix->title ?></h4>
+                            <p class="card-text"><?php echo $matrix->language ?></p>
+                            <p class="card-text"><?php echo $matrix->score ?></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title"><?php echo $cast_away->title ?></h4>
+                            <p class="card-text"><?php echo $cast_away->language ?></p>
+                            <p class="card-text"><?php echo $cast_away->score ?></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
 
 
 </body>
