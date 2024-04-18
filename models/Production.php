@@ -6,7 +6,7 @@ class Production
     // public $language;
     // public $score;
 
-    function __construct(public string $title, public string $language, public string $score)
+    function __construct(public string $title, public string $language, public int $score)
     {
         $this->title = $title;
         $this->language = $language;
@@ -17,9 +17,9 @@ class Production
     {
         $this->score = $score;
         if ($score > 7) {
-            var_dump("$this->title è un buon film");
+            echo "$this->title è un buon film";
         } else {
-            var_dump("$this->title Non è un buon film mi dispiace");
+            echo "$this->title Non è un buon film mi dispiace";
         }
     }
 }

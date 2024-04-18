@@ -39,42 +39,53 @@ require './models/db.php';
                         <div class="card-body">
                             <h4 class="card-title"><?php echo $matrix->title ?></h4>
                             <p class="card-text"><?php echo $matrix->language ?></p>
-                            <p class="card-text"><?php echo $matrix->score ?></p>
+                            <p class="card-text"><?php echo $matrix->score ?>/10</p>
+                            <p class="card-text"><?php $matrix->isGood($matrix->score) ?></p>
                         </div>
                     </div>
                     <div class="card w-25">
                         <div class="card-body">
                             <h4 class="card-title"><?php echo $cast_away->title ?></h4>
                             <p class="card-text"><?php echo $cast_away->language ?></p>
-                            <p class="card-text"><?php echo $cast_away->score ?></p>
+                            <p class="card-text"><?php echo $cast_away->score ?>/10</p>
+                            <p class="card-text"><?php $cast_away->isGood($cast_away->score) ?></p>
+
                         </div>
                     </div>
                     <div class="card w-25">
                         <div class="card-body">
                             <h4 class="card-title"><?php echo $schindler_list->title ?></h4>
                             <p class="card-text"><?php echo $schindler_list->language ?></p>
-                            <p class="card-text"><?php echo $schindler_list->score ?></p>
+                            <p class="card-text"><?php echo $schindler_list->score ?>/10</p>
+                            <p class="card-text"><?php $schindler_list->isGood($schindler_list->score) ?></p>
+
                         </div>
                     </div>
                     <div class="card w-25">
                         <div class="card-body">
                             <h4 class="card-title"><?php echo $lord_of_the_rings->title ?></h4>
                             <p class="card-text"><?php echo $lord_of_the_rings->language ?></p>
-                            <p class="card-text"><?php echo $lord_of_the_rings->score ?></p>
+                            <p class="card-text"><?php echo $lord_of_the_rings->score ?>/10</p>
+                            <p class="card-text"><?php $lord_of_the_rings->isGood($lord_of_the_rings->score) ?></p>
+
                         </div>
                     </div>
                     <div class="card w-25">
                         <div class="card-body">
                             <h4 class="card-title"><?php echo $star_wars->title ?></h4>
                             <p class="card-text"><?php echo $star_wars->language ?></p>
-                            <p class="card-text"><?php echo $star_wars->score ?></p>
+                            <p class="card-text"><?php echo $star_wars->score ?>/10</p>
+                            <p class="card-text"><?php $star_wars->isGood($star_wars->score) ?></p>
+
                         </div>
                     </div>
                     <div class="card w-25">
                         <div class="card-body">
                             <h4 class="card-title"><?php echo $in_vacanza_su_marte->title ?></h4>
                             <p class="card-text"><?php echo $in_vacanza_su_marte->language ?></p>
-                            <p class="card-text"><?php echo $in_vacanza_su_marte->score ?></p>
+                            <p class="card-text"><?php echo $in_vacanza_su_marte->score ?>/10</p>
+                            <p class="card-text"><?php $in_vacanza_su_marte->isGood($in_vacanza_su_marte->score) ?></p>
+
                         </div>
 
                     </div>
