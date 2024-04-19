@@ -2,6 +2,8 @@
 
 include './Production.php';
 
+include './genre.php';
+
 $matrix = new Production('The Matrix', 'English', 9, new Genre('action', 'lorem ipsum dolor lorem ipsum dolor'));
 
 $cast_away = new Production('Cast Away', 'English', 8, new Genre('action', 'lorem ipsum dolor lorem ipsum dolor'));

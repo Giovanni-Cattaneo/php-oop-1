@@ -1,12 +1,14 @@
 <?php
 
+include './genre.php';
+
 class Production
 {
     // public $title;
     // public $language;
     // public $score;
 
-    function __construct(public string $title, public string $language, public int $score, Genre $genre)
+    function __construct(public string $title, public string $language, public int $score, public Genre $genre)
     {
         $this->title = $title;
         $this->language = $language;

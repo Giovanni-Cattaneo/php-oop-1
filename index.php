@@ -39,6 +39,7 @@ require './models/db.php';
                         <div class="card-body">
                             <h4 class="card-title"><?php echo $matrix->title ?></h4>
                             <p class="card-text"><?php echo $matrix->language ?></p>
+
                             <p class="card-text"><?php echo $matrix->score ?>/10</p>
                             <p class="card-text"><?php $matrix->isGood($matrix->score) ?></p>
                         </div>
