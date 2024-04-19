@@ -36,9 +36,9 @@ $movies = [$matrix, $cast_away, $schindler_list, $lord_of_the_rings, $star_wars,
 
     <main class="mt-5">
         <div class="container">
-            <div class="row justify-content-center align-items-center g-2 d-flex">
+            <div class="row justify-content-center g-2 d-flex">
                 <?php foreach ($movies as $movie) : ?>
-                    <div class="col-4">
+                    <div class="col-4 d-flex">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title"><?php echo $movie->getTitle() ?></h4>
