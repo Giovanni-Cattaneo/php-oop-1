@@ -10,9 +10,9 @@ class Production
 
     function __construct(public string $title, public string $language, public int $score, public Genre $genre)
     {
-        $this->title = $title;
-        $this->language = $language;
-        $this->score = $score;
+        // $this->title = $title;
+        // $this->language = $language;
+        // $this->score = $score;
     }
 
     function isGood($score)
