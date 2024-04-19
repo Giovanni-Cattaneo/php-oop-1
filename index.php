@@ -36,11 +36,10 @@ $movies = [$matrix, $cast_away, $schindler_list, $lord_of_the_rings, $star_wars,
 
     <main class="mt-5">
         <div class="container">
-            <?php foreach ($movies as $movie) : ?>
-                <div class="row justify-content-center align-items-center g-2 d-flex">
+            <div class="row justify-content-center align-items-center g-2">
+                <?php foreach ($movies as $movie) : ?>
                     <div class="col d-flex flex-wrap justify-content-center gap-3">
-                        <div class="card w-25">
-
+                        <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title"><?php echo $movie->title ?></h4>
                                 <p class="card-text"><?php echo $movie->language ?></p>
@@ -52,7 +51,7 @@ $movies = [$matrix, $cast_away, $schindler_list, $lord_of_the_rings, $star_wars,
                         </div>
                     </div>
                 <?php endforeach; ?>
-                </div>
+            </div>
         </div>
     </main>
 
