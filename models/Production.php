@@ -17,11 +17,15 @@ class Production
 
     function isGood($score)
     {
-        $this->score = $score;
         if ($score > 7) {
             echo "$this->title è un buon film";
         } else {
             echo "$this->title Non è un buon film mi dispiace";
         }
+    }
+
+    public function getTitle()
+    {
+        return $this->title;
     }
 }
