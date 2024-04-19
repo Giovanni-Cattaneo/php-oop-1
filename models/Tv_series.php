@@ -1,4 +1,7 @@
 <?php
+
+require_once __DIR__ . '/Production.php';
+
 class Tv_series extends Production
 {
 

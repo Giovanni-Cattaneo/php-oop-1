@@ -1,5 +1,6 @@
 <?php
 
+require_once __DIR__ . '/Production.php';
 
 class Movies extends Production
 {

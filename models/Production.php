@@ -8,7 +8,7 @@ class Production
     // public $language;
     // public $score;
 
-    function __construct(public string $title, public string $language, public int $score, public Genre $genre)
+    function __construct(public string $title, public string $language, public int $score, public Genre $genre, public Movies $movies)
     {
         // $this->title = $title;
         // $this->language = $language;
