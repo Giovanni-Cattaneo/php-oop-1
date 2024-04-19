@@ -1,6 +1,6 @@
 <?php
 
-include './genre.php';
+include 'genre.php';
 
 class Production
 {
