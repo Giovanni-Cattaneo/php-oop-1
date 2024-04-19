@@ -1,7 +1,5 @@
 <?php
 
-include './Production.php';
-
 $matrix = new Production('The Matrix', 'English', 9, new Genre('Action', 'Neo giovane programmatore geniale scopre che il suo mondo altro non è ch una complessa illusione informatica creata da un programma chiamato Matrix'));
 
 $cast_away = new Production('Cast Away', 'English', 8, new Genre('Drama', 'Un dipendente FedEx in seguito ad un incidente aereo finisce su un isola sperduta nell atlantico, dovrà usare tutto il suo ingegno per sopravvivere'));

@@ -1,6 +1,6 @@
 <?php
 
-require_once  './models/Production.php';
+require_once __DIR__ . '/models/Production.php';
 
 require './models/db.php';
 
