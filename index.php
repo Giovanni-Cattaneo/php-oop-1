@@ -50,8 +50,8 @@ $films = [$matrix, $cast_away, $schindler_list, $lord_of_the_rings, $star_wars, 
                                 <p class="card-text"><?php echo $film->genre->type ?></p>
                                 <p class="card-text"><?php echo $film->genre->description ?></p>
                                 <p class="card-text"><?php echo $film->score ?>/10</p>
-                                <p class="card-text"><?php echo $film->movies->profits ?></p>
-                                <p class="card-text"><?php echo $film->movies->length ?></p>
+                                <p class="card-text"><?php echo $film->movies->getProfit() ?></p>
+                                <p class="card-text"><?php echo $film->movies->getLength() ?></p>
                                 <p class="card-text"><?php echo $film->isGood($movie->score) ?></p>
                             </div>
                         </div>

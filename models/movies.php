@@ -9,4 +9,14 @@ class Movies extends Production
     {
         parent::__construct($title, $language, $score, $genre);
     }
+
+    public function getProfit()
+    {
+        return $this->profits;
+    }
+
+    public function getLength()
+    {
+        return $this->length;
+    }
 }
